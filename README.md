@@ -5,7 +5,8 @@ Helper addon for **openFrameworks** to simplify the integration of some curated 
 **Glitches/Fx/Color** into your projects. GUI, workflow, and settings manager to be used *Out-Of-The-Box*.  
 
 Bundled Add-ons:  
-ofxKsmrFragmentFx, ofxPostGlitch, ofxPostProcessing, ofxWTBSPostGlitch, ofxChannelFx, ofxGpuLutCube, ofxShaderGlitch. 
+ofxKsmrFragmentFx, ofxPostGlitch, ofxPostProcessing and ofxWTBSPostGlitch.  
++ ofxChannelFx, ofxGpuLutCube and ofxShaderGlitch.  
 
 ## GIF/Video
 
@@ -63,6 +64,7 @@ processor.drawGui();
 - **1_example-Basic**: One chained channel with **Core Fx**.  
 - **2_example-ExtraFX**: One chained channel with **Extra Fx**.  
 - **3_example-Presets**: Integration with **ofxPresetsManager**.
+- **4_example-NDI**: *WIP* example to process **webcam/NDI Input** and **NDI Out**.
 
 ## Dependencies
 - ofxGui
@@ -84,8 +86,8 @@ processor.drawGui();
   * [ofxShaderGlitch](https://github.com/pierrextardif/ofxShaderGlitch)
 
 ## TODO
+- Integration with a video/layer mixer. **NEW add-on will be released soon!**
 - Improve **ofxPresetsManager** performance. Too many **ofParameters** slowdowns performance. 
-- Integration with a video/layer mixer add-on released soon!
 - Add **MIDI** and **OSC** remote control. 
 
 ## Tested Systems
