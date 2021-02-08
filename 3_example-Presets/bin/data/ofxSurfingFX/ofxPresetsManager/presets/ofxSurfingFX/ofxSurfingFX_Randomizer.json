@@ -95,16 +95,16 @@
                 "SHORT_9": "0"
             },
             "PRESETS_PROBS": {
-                "PROB_0": "5",
-                "PROB_1": "5",
-                "PROB_2": "5",
-                "PROB_3": "5",
-                "PROB_4": "5",
-                "PROB_5": "5",
-                "PROB_6": "5",
-                "PROB_7": "5",
-                "PROB_8": "5",
-                "PROB_9": "5"
+                "PROB_0": "1",
+                "PROB_1": "1",
+                "PROB_2": "0",
+                "PROB_3": "0",
+                "PROB_4": "0",
+                "PROB_5": "0",
+                "PROB_6": "0",
+                "PROB_7": "0",
+                "PROB_8": "0",
+                "PROB_9": "0"
             },
             "t_BPM": "78.534",
             "t_DURATION": "1528",

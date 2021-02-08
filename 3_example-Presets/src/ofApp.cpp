@@ -31,10 +31,8 @@ void ofApp::draw()
 
 	//-
 
-	//gui
+	// gui
 
-	ofDisableDepthTest();
-	
 	FX_Processor.drawGui();
 }
 

@@ -28,19 +28,19 @@
             }
         },
         "FX_B": {
-            "FX_B": "0",
+            "FX_B": "1",
             "ofxGpuLutCube": {
-                "LUT": "9",
+                "LUT": "12",
                 "MIX": "1"
             }
         },
         "FX_C": {
-            "FX_C": "0",
+            "FX_C": "1",
             "FX_C_TOGGLES": {
                 "DELAY": "0",
                 "GLITCH": "0",
                 "NOISE_H": "0",
-                "NOISE_V": "0",
+                "NOISE_V": "1",
                 "PIXELATE": "0",
                 "RGB_SHIFT": "0",
                 "SPLIT_H": "0",
@@ -50,7 +50,7 @@
             "SLIDERS": {
                 "GLITCH_SIZE": "0.2",
                 "NOISE_H": "0.2",
-                "NOISE_V": "0.2",
+                "NOISE_V": "0.0867347",
                 "PIXELATE_SIZE": "0.2",
                 "RGB_SHIFT": "0.2",
                 "SPLIT_H": "0.2",
@@ -61,7 +61,7 @@
             "FX_D": "1",
             "FX_D_TOGGLES": {
                 "EDGE": "0",
-                "FRINGE": "1",
+                "FRINGE": "0",
                 "INVERT": "0",
                 "NOISE": "0",
                 "NOISE_TV": "0",
@@ -85,14 +85,14 @@
             "EDGE": "0",
             "FXAA": "0",
             "FX_E": "1",
-            "GODRAYS": "1",
+            "GODRAYS": "0",
             "GODRAYS-LIGHT": "0.352041",
             "HORIZONTALTILTSHIFT": "0",
             "KALEIDO": "0",
-            "LIMBDARKENING": "0",
+            "LIMBDARKENING": "1",
             "NOISEWARP": "0",
             "PIXELATE": "0",
-            "RGBSHIFT": "1",
+            "RGBSHIFT": "0",
             "RIMHIGHLIGHTING": "0",
             "SSAO": "0",
             "SSAO-AO_CLAMP": "0.65",
@@ -109,7 +109,7 @@
             "FX_F": "0"
         },
         "FX_G": {
-            "FX_G": "1",
+            "FX_G": "0",
             "group": null
         }
     }
