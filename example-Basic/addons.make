@@ -1,0 +1,5 @@
+ofxSurfingFX
+ofxGui
+ofxGuiExtended2
+ofxSceneTEST
+ofxSurfingHelpers
