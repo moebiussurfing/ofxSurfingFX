@@ -2,11 +2,11 @@
 
 ## Overview
 Helper addon for **openFrameworks** to simplify the integration of some curated **OF Fx addons**:  
-**Glitches/Fx/Color** into your projects. GUI, workflow, and settings manager to be used *Out-Of-The-Box*.  
+**Glitches/Post/Fx/Color** into your projects. GUI, workflow, and settings manager to be used *Out-Of-The-Box*.  
 
 Bundled Add-ons:  
 ofxKsmrFragmentFx, ofxPostGlitch, ofxPostProcessing and ofxWTBSPostGlitch.  
-ofxChannelFx, ofxGpuLutCube and ofxShaderGlitch.  
+ofxChannelFx, ofxGpuLutCube and ofxShaderGlitch. (ExtraFX)  
 
 ## GIF/Video
 
@@ -52,7 +52,7 @@ processor.setup();
 
 // update()
 processor.begin();
-    /* draw-your-scene */
+  /* draw-your-scene */
 processor.end();
 
 // draw()
