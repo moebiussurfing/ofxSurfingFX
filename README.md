@@ -24,7 +24,7 @@ https://imgur.com/a/xKZns9N
 
 ## Features
 * **Three independent channels** with (fixed chain positions) effects:
- * One-Channel Mode. (All Fx chainned).
+ * One-Channel Mode. (All Fx chained).
  * Dual input channels + Output mixer (Should use your own video/layers-mixer).
 * Nice **GUI** with enablers and tweakers.
 * **Settings handler** to auto Store/Recall.
@@ -42,15 +42,18 @@ ofxSurfingFX processor;
 ### ofApp.cpp
 ```c++
 // setup()
-processor.setup();
 
 // only one input channel, and all the Fx-Channels routed chained
 processor.setModeOneChain(true);
+
+processor.setup();
+
 
 // update()
 processor.begin();
     /* draw-your-scene */
 processor.end();
+
 
 // draw()
 processor.drawOutput();
@@ -59,24 +62,24 @@ processor.drawGui();
 ```
 
 ## Examples
-- _1_example-Basic_: One chainned channel with **Core Fx**.  
-- _2_example-ExtraFX_: One chainned channel with **Extra Fx**.  
+- _1_example-Basic_: One chained channel with **Core Fx**.  
+- _2_example-ExtraFX_: One chained channel with **Extra Fx**.  
 - _3_example-Presets_: Integration with **ofxPresetsManager**.
 
 ## Dependencies
-* ofxGui
-* [ofxGuiExtended2](https://github.com/moebiussurfing/ofxGuiExtended2)
-* [ofxSurfingHelpers](https://github.com/moebiussurfing/ofxSurfingHelpers)
-* [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST) *for the examples scenes only*
+- ofxGui
+- [ofxGuiExtended2](https://github.com/moebiussurfing/ofxGuiExtended2)
+- [ofxSurfingHelpers](https://github.com/moebiussurfing/ofxSurfingHelpers)
+- [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST) (*for the examples scenes only*)
 
 * **Core-Bundled Fx Addons**. Already included into **OF_ADDON/libs**  
-(No need to add manually)
+(No need to download or add manually)
   * [ofxKsmrFragmentFx](https://github.com/loveandsheep/ofxKsmrFragmentFx)
   * [ofxPostGlitch](https://github.com/maxillacult/ofxPostGlitch)
   * [ofxPostProcessing](https://github.com/neilmendoza/ofxPostProcessing)
   * [ofxWTBSPostGlitch](https://github.com/watab0shi/ofxWTBSPostGlitch)
 
-* **ExtraFX**. Requires to uncomment the line ```#define USE_Extra_ADDONS``` into ```ofxSurfingFX.h```
+* **ExtraFX**. Requires to uncomment the line ```#define USE_Extra_ADDONS``` into ```ofxSurfingFX.h```  
 (You need to download and add them manually)
   * [ofxChannelFx](https://github.com/moebiussurfing/ofxChannelFx)
   * [ofxGpuLutCube](https://github.com/moebiussurfing/ofxGpuLutCube)
