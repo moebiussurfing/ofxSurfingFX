@@ -6,7 +6,7 @@ Helper addon for **openFrameworks** to simplify the integration of some curated 
 
 Bundled Add-ons:  
 ofxKsmrFragmentFx, ofxPostGlitch, ofxPostProcessing and ofxWTBSPostGlitch.  
-+ ofxChannelFx, ofxGpuLutCube and ofxShaderGlitch.  
+ofxChannelFx, ofxGpuLutCube and ofxShaderGlitch.  
 
 ## GIF/Video
 
