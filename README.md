@@ -23,7 +23,7 @@ https://imgur.com/a/xKZns9N
 ![image](/readme_images/ofxSurfingFX_FullGui.jpg?raw=true "image")  
 
 ## Features
-* **Three independent channels** with (fixed positions) effects:
+* **Three independent channels** with (fixed chain positions) effects:
  * One-Channel Mode. (All Fx chainned).
  * Dual input channels + Output mixer (Should use your own video/layers-mixer).
 * Nice **GUI** with enablers and tweakers.
@@ -43,6 +43,7 @@ ofxSurfingFX processor;
 ```c++
 // setup()
 processor.setup();
+
 // only one input channel, and all the Fx-Channels routed chained
 processor.setModeOneChain(true);
 
@@ -68,21 +69,23 @@ processor.drawGui();
 * [ofxSurfingHelpers](https://github.com/moebiussurfing/ofxSurfingHelpers)
 * [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST) *for the examples scenes only*
 
-* **Core-Bundled Fx Addons**. Already included into **OF_ADDON/libs**
+* **Core-Bundled Fx Addons**. Already included into **OF_ADDON/libs**  
+(No need to add manually)
   * [ofxKsmrFragmentFx](https://github.com/loveandsheep/ofxKsmrFragmentFx)
   * [ofxPostGlitch](https://github.com/maxillacult/ofxPostGlitch)
   * [ofxPostProcessing](https://github.com/neilmendoza/ofxPostProcessing)
   * [ofxWTBSPostGlitch](https://github.com/watab0shi/ofxWTBSPostGlitch)
 
 * **ExtraFX**. Requires to uncomment the line ```#define USE_Extra_ADDONS``` into ```ofxSurfingFX.h```
+(You need to download and add them manually)
   * [ofxChannelFx](https://github.com/moebiussurfing/ofxChannelFx)
   * [ofxGpuLutCube](https://github.com/moebiussurfing/ofxGpuLutCube)
   * [ofxShaderGlitch](https://github.com/pierrextardif/ofxShaderGlitch)
 
 ## TODO
-- Improve ofxPresetsManager performance. Too many ofParameters slowdowns performance. 
-- Integration with a video mixer released soon.
-- Add MIDI and OSC remote control. 
+- Improve **ofxPresetsManager** performance. Too many **ofParameters** slowdowns performance. 
+- Integration with a video/layer mixer add-on released soon!
+- Add **MIDI** and **OSC** remote control. 
 
 ## Tested Systems
 - **Windows10** / **VS2017** / **OF ~0.11**
@@ -92,9 +95,10 @@ processor.drawGui();
 Addon by **@moebiusSurfing**  
 *(ManuMolina). 2020.*
 
-**_Thanks to the developers of the included add-ons! @loveandsheep, @maxillacult, @neilmendoza, @watab0shi, @pierrextardif & @frauzufall._**
+**_Thanks to the developers of the included add-ons!_**  
+**_@loveandsheep, @maxillacult, @neilmendoza, @watab0shi, @pierrextardif & @frauzufall._**
 
 ## License
 *MIT License.*
 
-**_PLEASE FEEL FREE TO ADD/ASK FOR MODIFICATIONS OR FEATURES AND TO SEND ME PULL REQUESTS OR ISSUES!_**
+**_PLEASE FEEL FREE TO ADD/ASK FOR MODIFICATIONS OR FEATURES, AND TO SEND ME PULL REQUESTS OR ISSUES!_**
