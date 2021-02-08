@@ -7,9 +7,13 @@ GUI, workflow and settings manager to be used *Out-Of-The-Box*.
 
 ## Screenshots
 ![image](/readme_images/1_example-Basic.PNG?raw=true "image")  
+
 ![image](/readme_images/2_example-ExtraFX.PNG?raw=true "image")  
+
 ![image](/readme_images/2_example-ExtraFXb.PNG?raw=true "image")  
+
 ![image](/readme_images/ofxSurfingFX_FullGui.jpg?raw=true "image")  
+
 
 ## Video/Gif
 
@@ -34,20 +38,17 @@ ofxSurfingFX processor;
 ```c++
 // setup()
 processor.setup();
-// only one input channel, and all the fx-channels routed chained
+// only one input channel, and all the Fx-Channels routed chained
 processor.setModeOneChain(true);
 
 // update()
 processor.begin();
-	// draw your scene
+//- draw your scene -//
 processor.end();
 
 // draw()
 processor.drawOutput();
 processor.drawGui();
-
-// windowResized(int w, int h)
-processor.windowResized(w, h);
 ```
 
 ## Examples
@@ -77,6 +78,10 @@ Requires to uncomment the line ```#define USE_Extra_ADDONS``` into ```ofxSurfing
   * [ofxChannelFx](https://github.com/moebiussurfing/ofxChannelFx)
   * [ofxGpuLutCube](https://github.com/moebiussurfing/ofxGpuLutCube)
   * [ofxShaderGlitch](https://github.com/pierrextardif/ofxShaderGlitch)
+
+## TODO
+- Improve ofxPresetsManager performance.  
+-  
 
 ## Tested Systems
 - **Windows10** / **VS2017** / **OF ~0.11**
