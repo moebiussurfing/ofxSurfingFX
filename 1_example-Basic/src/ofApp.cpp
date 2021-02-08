@@ -5,8 +5,8 @@ void ofApp::setup()
 {
 	ofSetFrameRate(60);
 
-	FX_Processor.setup();
 	FX_Processor.setModeOneChain(true);// only one input channel, and all the fx-channels routed chained
+	FX_Processor.setup();
 }
 
 //--------------------------------------------------------------

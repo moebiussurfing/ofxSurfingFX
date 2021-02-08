@@ -1206,8 +1206,9 @@ void ofxSurfingFX::Changed_params_AppSession(ofAbstractParameter &e)
 
 		else if (name == MODE_OneChain.getName())
 		{
-			auto _gChan = panel_Controls->getGroup("CHANNELS");
 			bool b = !MODE_OneChain.get();
+			auto _gChan = panel_Controls->getGroup("CHANNELS");
+			_gChan->setVisible(b);
 			_gChan->getControl("CH 1")->setEnabled(b);
 			_gChan->getControl("CH 2")->setEnabled(b);
 			_gChan->getControl("MIX OUT")->setEnabled(b);

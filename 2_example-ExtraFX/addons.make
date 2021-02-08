@@ -1,9 +1,9 @@
-ofxGui
 ofxChannelFx
-ofxSurfingFX
 ofxGpuLutCube
+ofxGui
 ofxGuiExtended2
 ofxSceneTEST
 ofxShaderGlitch
+ofxSurfingFX
 ofxSurfingHelpers
 ofxWindowApp

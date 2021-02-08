@@ -32,9 +32,10 @@ public:
 	void setup();
 	void update();
 	void draw();
+
 	void windowResized(int w, int h);
 
 	ofxSurfingFX FX_Processor;
 
-	ofxSceneTEST scene;
+	ofxSceneTEST scene;// press S to show gui
 };

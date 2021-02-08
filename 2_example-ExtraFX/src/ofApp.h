@@ -1,9 +1,11 @@
 
-//	NOTE ABOUT THIS EXAMPLE: 
-//	example-ExtraFX
+//	NOTE 
+//	ABOUT THIS EXAMPLE: 
+//
+//	2_example-ExtraFX
 //
 //	To run out-of-the-box:
-//	This example requires to un-comment the line:
+//	This example requires to un-comment (enable) the line:
 //	#define USE_Extra_ADDONS
 //	in ofxSurfingFX.h
 //	Then we will have the extra addons available too:
@@ -11,24 +13,26 @@
 //	Core addons will be included allways and bundled into OF_ADDON/libs, 
 //	(so you don't need to download or to add them into the OF Project Generator)
 //
-//	* Core Fx addons:
+//	* Core Fx addons: (already included)
 //	ofxKsmrFragmentFx
 //	ofxPostGlitch
 //	ofxPostProcessing
 //	ofxWTBSPostGlitch
 //
-//	* Extra Fx addons:
+//	* Extra Fx addons: (must be downloaded manually)
 //	ofxGpuLutCube
 //	ofxShaderGlitch
 //	ofxChannelFx
+
 
 #pragma once
 #include "ofMain.h"
 
 #include "ofxSurfingFX.h"
-#include "ofxSceneTEST.h" // only for the example!
 
-//#define USE_ofxWindowApp
+#include "ofxSceneTEST.h" // only required for the example!
+
+//#define USE_ofxWindowApp // only required for the example!
 #ifdef USE_ofxWindowApp
 #include "ofxWindowApp.h"
 #endif
@@ -39,8 +43,8 @@ public:
 	void setup();
 	void update();
 	void draw();
+
 	void windowResized(int w, int h);
-	void keyPressed(int key);
 
 	ofxSurfingFX FX_Processor;
 

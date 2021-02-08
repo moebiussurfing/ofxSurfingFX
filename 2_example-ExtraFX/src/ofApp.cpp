@@ -38,9 +38,3 @@ void ofApp::windowResized(int w, int h)
 {
 	FX_Processor.windowResized(w, h);
 }
-
-//--------------------------------------------------------------
-void ofApp::keyPressed(int key)
-{
-	scene.setToggleGuiVisible();
-}
