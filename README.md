@@ -43,7 +43,7 @@ processor.setModeOneChain(true);
 
 // update()
 processor.begin();
-//- draw your scene -//
+ /* draw-your-scene */
 processor.end();
 
 // draw()
