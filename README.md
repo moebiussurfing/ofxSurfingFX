@@ -5,7 +5,7 @@ Helper addon for **openFrameworks** to simplify the integration of some curated 
 **Glitches/Post/Fx/Color** into your projects. GUI, workflow, and settings manager to be used *Out-Of-The-Box*.  
 
 Bundled Add-ons:  
-ofxKsmrFragmentFx, ofxPostGlitch, ofxPostProcessing and ofxWTBSPostGlitch.  
+ofxKsmrFragmentFx, ofxPostGlitch, ofxPostProcessing and ofxWTBSPostGlitch. (CoreFx)  
 ofxChannelFx, ofxGpuLutCube and ofxShaderGlitch. (ExtraFX)  
 
 ## GIF/Video
@@ -23,16 +23,16 @@ https://imgur.com/a/xKZns9N
 **2_example-ExtraFX**  
 ![image](/readme_images/2_example-ExtraFXb.PNG?raw=true "image")  
 
-**Full controls**  
+**Full controls list**  
 ![image](/readme_images/ofxSurfingFX_FullGui.jpg?raw=true "image")  
 
 ## Features
 * **Three independent channels** with (fixed chain positions) effects:
- * One-Channel Mode. (All Fx chained).
+ * One-Channel Mode. (All 3CH Fx chained).
  * Dual input channels + Output mixer (Should use your own video/layers-mixer).
 * Nice **GUI** with enablers and tweakers.
 * **Settings handler** to auto Store/Recall.
-* **KeyCommands** controller for a selected Fx.
+* **Key Commands** controller for a selected Fx.
 * **ofxPresetsManager** compatible.
 
 ## Usage
@@ -71,8 +71,9 @@ processor.drawGui();
 - [ofxGuiExtended2](https://github.com/moebiussurfing/ofxGuiExtended2)
 - [ofxSurfingHelpers](https://github.com/moebiussurfing/ofxSurfingHelpers)
 - [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST) ( *For the examples scenes only* )
+- [ofxPresetsManager](https://github.com/moebiussurfing/ofxPresetsManager) ( *For the 3_example-Presets only* )
 
-* **Core-Bundled Fx Addons**. Already included into **OF_ADDON/libs**  
+* **Core-Bundled Fx Addons**. Already included into **OF/addons/OF_ADDON/libs**  
 (No need to download or add manually)
   * [ofxKsmrFragmentFx](https://github.com/loveandsheep/ofxKsmrFragmentFx)
   * [ofxPostGlitch](https://github.com/maxillacult/ofxPostGlitch)
