@@ -4,20 +4,22 @@
 Helper addon for **openFrameworks** to simplify the integration of some curated **OF Fx addons**:  
 **Glitches/Fx/Color** into your projects. GUI, workflow, and settings manager to be used *Out-Of-The-Box*.  
 
-## Video/Gif
+## GIF/Video
 
 ![gif](/readme_images/ofxSurfingFX.gif?raw=true "gif")  
-
 https://imgur.com/a/xKZns9N
 
 ## Screenshots
-
+**1_example-Basic**  
 ![image](/readme_images/1_example-Basic.PNG?raw=true "image")  
 
+**2_example-ExtraFX**  
 ![image](/readme_images/2_example-ExtraFX.PNG?raw=true "image")  
 
+**2_example-ExtraFX**  
 ![image](/readme_images/2_example-ExtraFXb.PNG?raw=true "image")  
 
+**Full controls**  
 ![image](/readme_images/ofxSurfingFX_FullGui.jpg?raw=true "image")  
 
 ## Features
