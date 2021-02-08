@@ -1,14 +1,16 @@
 
-//	NOTE ABOUT THIS EXAMPLE:
-//	example-Basic
+//	NOTE 
+//	ABOUT THIS EXAMPLE:
+//
+//	1_example-Basic
 //
 //	To run out-of-the-box:
-//	This example requires to comment the line:
+//	This example requires to comment (disable) the line:
 //	#define USE_Extra_ADDONS
 //	in ofxSurfingFX.h
 //	Then will use the core addons only.
 //	This addons are all bundled into OF_ADDON/libs, 
-//	(so you don't need to download or add them into the OF Project Generator)
+//	(so you don't need to download or add them into the OF Project Generator manually)
 //	
 //	* Core Fx addons:
 //	ofxKsmrFragmentFx

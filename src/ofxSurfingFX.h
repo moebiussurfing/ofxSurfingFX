@@ -7,7 +7,7 @@
 //							
 //	OPTIONAL DEFINES					
 //							
-#define USE_Extra_ADDONS // un-comment to include the extra Fx addons!
+//#define USE_Extra_ADDONS // un-comment to include the extra Fx addons!
 //							
 //
 //#define USE_ofxPresetsManager // un-comment to include the presets manager

@@ -587,7 +587,9 @@ void ofxSurfingFX::exit()
 	Gui_Main_Position = glm::vec2(panel_Fx->getPosition().x, panel_Fx->getPosition().y);
 	Gui_Control_Position = glm::vec2(panel_Controls->getPosition().x, panel_Controls->getPosition().y);
 	Gui_Helper_Position = glm::vec2(panel_Helpers->getPosition().x, panel_Helpers->getPosition().y);
+#ifdef USE_Extra_ADDONS
 	Gui_ChannelFx_Position = glm::vec2(channelFx.getGuiPosition().x, channelFx.getGuiPosition().y);
+#endif
 
 	//-
 
@@ -2058,7 +2060,11 @@ void ofxSurfingFX::gui_customizeApply()
 	//1. control
 
 	(panel_Controls->getControl(SHOW_FxControls.getName()))->setConfig(jButBigXL);
+
+#ifdef USE_ofxChannelFx
 	(panel_Controls->getControl(SHOW_ChannelFx.getName()))->setConfig(jButBigXL);
+#endif
+
 	//(panel_Controls->getControl(MODE_Fx.getName()))->setConfig(jButBigXL);//only used when presets manager enabled
 
 	//-
@@ -2200,12 +2206,12 @@ void ofxSurfingFX::gui_customizeApply()
 
 	//4. json theme
 	loadTheme(path_Theme);
-//	panel_Fx->loadTheme(path_Theme);
-//	panel_Controls->loadTheme(path_Theme);
-//	panel_Helpers->loadTheme(path_Theme);
-//#ifdef USE_ofxChannelFx
-//	channelFx.loadTheme(path_Theme);
-//#endif
+	//	panel_Fx->loadTheme(path_Theme);
+	//	panel_Controls->loadTheme(path_Theme);
+	//	panel_Helpers->loadTheme(path_Theme);
+	//#ifdef USE_ofxChannelFx
+	//	channelFx.loadTheme(path_Theme);
+	//#endif
 }
 
 //--------------------------------------------------------------
@@ -3019,7 +3025,9 @@ void ofxSurfingFX::Changed_params_FX_Mixer(ofAbstractParameter &e)
 				}
 
 				//workaround
+#ifdef USE_Extra_ADDONS
 				channelFx.setVflip(ENABLE_FX_E && ENABLE_FX_G);
+#endif
 			}
 
 #ifdef USE_ofxShaderGlitch
