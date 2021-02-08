@@ -48,33 +48,28 @@ processor.end();
 
 // draw()
 processor.drawOutput();
+
 processor.drawGui();
 ```
 
 ## Examples
-- _1_example-Basic_:  
-  One chainned channel with **Core Fx**  
-- _2_example-ExtraFX_:  
-  One chainned channel with **Extra Fx**  
-- _3_example-Presets_:  
-  Integration with **ofxPresetsManager**.
+- _1_example-Basic_: One chainned channel with **Core Fx**.  
+- _2_example-ExtraFX_: One chainned channel with **Extra Fx**.  
+- _3_example-Presets_: Integration with **ofxPresetsManager**.
 
 ## Dependencies
 * ofxGui
 * [ofxGuiExtended2](https://github.com/moebiussurfing/ofxGuiExtended2)
-* [ofxSurfingHelpers](https://github.com/moebiussurfing/ofxSurfingHelpers) 
-* [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST)  
-  *for the examples scenes only*
+* [ofxSurfingHelpers](https://github.com/moebiussurfing/ofxSurfingHelpers)
+* [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST) *for the examples scenes only*
 
-* **Core-Bundled Fx Addons**  
-Already included into **OF_ADDON/libs**  
+* **Core-Bundled Fx Addons**. Already included into **OF_ADDON/libs**
   * [ofxKsmrFragmentFx](https://github.com/loveandsheep/ofxKsmrFragmentFx)
   * [ofxPostGlitch](https://github.com/maxillacult/ofxPostGlitch)
   * [ofxPostProcessing](https://github.com/neilmendoza/ofxPostProcessing)
   * [ofxWTBSPostGlitch](https://github.com/watab0shi/ofxWTBSPostGlitch)
 
-* **ExtraFX**  
-Requires to uncomment the line ```#define USE_Extra_ADDONS``` into ```ofxSurfingFX.h```  
+* **ExtraFX**. Requires to uncomment the line ```#define USE_Extra_ADDONS``` into ```ofxSurfingFX.h```
   * [ofxChannelFx](https://github.com/moebiussurfing/ofxChannelFx)
   * [ofxGpuLutCube](https://github.com/moebiussurfing/ofxGpuLutCube)
   * [ofxShaderGlitch](https://github.com/pierrextardif/ofxShaderGlitch)
