@@ -2,7 +2,7 @@
 
 ## Overview
 Helper addon for **openFrameworks** to simplify the integration of some curated **OF Fx addons**:  
-**Glitchs/Fx/Color** into your projects. GUI, workflow and settings manager to be used *Out-Of-The-Box*.  
+**Glitches/Fx/Color** into your projects. GUI, workflow, and settings manager to be used *Out-Of-The-Box*.  
 
 ## Screenshots
 ![image](/readme_images/1_example-Basic.PNG?raw=true "image")  
@@ -74,8 +74,9 @@ processor.drawGui();
   * [ofxShaderGlitch](https://github.com/pierrextardif/ofxShaderGlitch)
 
 ## TODO
-- Improve ofxPresetsManager performance.  
--  
+- Improve ofxPresetsManager performance. Too many ofParameters slowdowns performance. 
+- Integration with a video mixer released soon.
+- Add MIDI and OSC remote control. 
 
 ## Tested Systems
 - **Windows10** / **VS2017** / **OF ~0.11**
@@ -85,7 +86,7 @@ processor.drawGui();
 Addon by **@moebiusSurfing**  
 *(ManuMolina). 2020.*
 
-**_Thanks to developers of the included add-ons! @loveandsheep, @maxillacult, @neilmendoza, @watab0shi, @pierrextardif & @frauzufall._**
+**_Thanks to the developers of the included add-ons! @loveandsheep, @maxillacult, @neilmendoza, @watab0shi, @pierrextardif & @frauzufall._**
 
 ## License
 *MIT License.*
