@@ -3,6 +3,8 @@
 ## Overview
 Helper addon for **openFrameworks** to simplify the integration of some curated **OF Fx addons**:  
 **Glitches/Fx/Color** into your projects. GUI, workflow, and settings manager to be used *Out-Of-The-Box*.  
+Bundled Add-ons:
+ofxKsmrFragmentFx, ofxPostGlitch, ofxPostProcessing, ofxWTBSPostGlitch, ofxChannelFx, ofxGpuLutCube, ofxShaderGlitch. 
 
 ## GIF/Video
 
@@ -42,35 +44,30 @@ ofxSurfingFX processor;
 ### ofApp.cpp
 ```c++
 // setup()
-
 // only one input channel, and all the Fx-Channels routed chained
 processor.setModeOneChain(true);
-
 processor.setup();
-
 
 // update()
 processor.begin();
     /* draw-your-scene */
 processor.end();
 
-
 // draw()
 processor.drawOutput();
-
 processor.drawGui();
 ```
 
 ## Examples
-- _1_example-Basic_: One chained channel with **Core Fx**.  
-- _2_example-ExtraFX_: One chained channel with **Extra Fx**.  
-- _3_example-Presets_: Integration with **ofxPresetsManager**.
+- **1_example-Basic**: One chained channel with **Core Fx**.  
+- **2_example-ExtraFX**: One chained channel with **Extra Fx**.  
+- **3_example-Presets**: Integration with **ofxPresetsManager**.
 
 ## Dependencies
 - ofxGui
 - [ofxGuiExtended2](https://github.com/moebiussurfing/ofxGuiExtended2)
 - [ofxSurfingHelpers](https://github.com/moebiussurfing/ofxSurfingHelpers)
-- [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST) (*for the examples scenes only*)
+- [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST) ( *For the examples scenes only* )
 
 * **Core-Bundled Fx Addons**. Already included into **OF_ADDON/libs**  
 (No need to download or add manually)
