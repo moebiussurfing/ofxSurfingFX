@@ -2,10 +2,12 @@
 --------------------------------
 
 ## Overview
-**ofxSurfingFX** is a helper addon for **openFrameworks** to simplify the integration of **Glitch/Fx/Color effects** into your projects: GUI and settings manager to use *Out-Of-The-Box*. 
+**ofxSurfingFX** is a helper addon for **openFrameworks** to simplify the integration of some curated OF **Glitch/Fx/Color effects** into your projects: GUI and settings manager to use *Out-Of-The-Box*. 
 
 ## Screenshot
-![image](/readme_images/screenshot.JPG?raw=true "image")
+![image](/readme_images/1_example-Basic.PNG?raw=true "image")  
+![image](/readme_images/2_example-ExtraFX.PNG?raw=true "image")  
+![image](/readme_images/2_example-ExtraFXb?raw=true "image")  
 
 ## Video/Gif
 
@@ -22,63 +24,55 @@
 ### ofApp.h
 ```c++
 #include "ofxSurfingFX.h"
-ofxSurfingFX FX_Processor;
+ofxSurfingFX processor;
 ```
 
 ### ofApp.cpp
 ```c++
 // setup()
-FX_Processor.setup();
+processor.setup();
 // only one input channel, and all the fx-channels routed chained
-FX_Processor.setModeOneChain(true);
+processor.setModeOneChain(true);
 
 // update()
-FX_Processor.begin();
+processor.begin();
 	// draw your scene
-FX_Processor.end();
+processor.end();
 
 // draw()
-FX_Processor.drawOutput();
-FX_Processor.drawGui();
+processor.drawOutput();
+processor.drawGui();
 
 // windowResized(int w, int h)
-FX_Processor.windowResized(w, h);
+processor.windowResized(w, h);
 ```
 
 ## Examples
-- _example-Advanced_:  
-  **WebCam** source input, and **NDI** sending/receiver  
-- _example-Basic_:  
+- _1_example-Basic_:  
   One chainned channel with **Core Fx**  
-- _example-ExtraFX_:  
+- _2_example-ExtraFX_:  
   One chainned channel with **Extra Fx**  
+- _3_example-Presets_:  
 
 ## Dependencies
-- ofxGui
-- ofxGuiExtended2
-- ofxSurfingHelpers
-- ofxSceneTEST  
+* ofxGui
+* [ofxGuiExtended2](https://github.com/moebiussurfing/ofxGuiExtended2)
+* [ofxSurfingHelpers](https://github.com/moebiussurfing/ofxSurfingHelpers) 
+* [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST)  
   *for the example scene only*
 
 * **Core-Bundled Fx Addons**  
 Already included into **OF_ADDON/libs**  
-  * ofxKsmrFragmentFx  
-  https://github.com/loveandsheep/ofxKsmrFragmentFx
-  * ofxPostGlitch  
-  https://github.com/maxillacult/ofxPostGlitch
-  * ofxPostProcessing  
-  https://github.com/neilmendoza/ofxPostProcessing
-  * ofxWTBSPostGlitch  
-  https://github.com/watab0shi/ofxWTBSPostGlitch
+  * [ofxKsmrFragmentFx](https://github.com/loveandsheep/ofxKsmrFragmentFx)
+  * [ofxPostGlitch](https://github.com/maxillacult/ofxPostGlitch)
+  * [ofxPostProcessing](https://github.com/neilmendoza/ofxPostProcessing)
+  * [ofxWTBSPostGlitch](https://github.com/watab0shi/ofxWTBSPostGlitch)
 
 * **ExtraFX**  
 With uncommented line ```#define USE_Extra_ADDONS``` into ```ofxSurfingFX.h```  
-  * ofxChannelFx  
-  https://github.com/moebiussurfing/ofxChannelFx
-  * ofxGpuLutCube  
-  https://github.com/moebiussurfing/ofxGpuLutCube
-  * ofxShaderGlitch  
-  https://github.com/pierrextardif/ofxShaderGlitch
+  * [ofxChannelFx](https://github.com/moebiussurfing/ofxChannelFx)
+  * [ofxGpuLutCube](https://github.com/moebiussurfing/ofxGpuLutCube)
+  * [ofxShaderGlitch](https://github.com/pierrextardif/ofxShaderGlitch)
 
 ## Tested Systems
 - **Windows10** / **VS2017** / **OF ~0.11**

@@ -1,0 +1,9 @@
+ofxChannelFx
+ofxGpuLutCube
+ofxGui
+ofxGuiExtended2
+ofxPresetsManager
+ofxSceneTEST
+ofxShaderGlitch
+ofxSurfingFX
+ofxSurfingHelpers

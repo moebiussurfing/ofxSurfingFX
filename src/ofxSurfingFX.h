@@ -10,7 +10,7 @@
 #define USE_Extra_ADDONS // un-comment to include the extra Fx addons!
 //							
 //
-//#define USE_ofxPresetsManager // un-comment to include the presets manager
+#define USE_ofxPresetsManager // un-comment to include the presets manager
 //							
 //-----------------------------
 
@@ -55,7 +55,7 @@
 #define USE_ofxChannelFx
 #endif
 //TODO:
-//here you can define what addons to include
+//here you can custom-define what addons to include
 //but could fail if not all are enabled
 
 //-

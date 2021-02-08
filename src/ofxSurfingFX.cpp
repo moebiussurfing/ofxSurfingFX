@@ -712,6 +712,13 @@ void ofxSurfingFX::keyPressed(ofKeyEventArgs &eventArgs)
 	{
 		MODE_Presets = !MODE_Presets;
 	}
+	
+	//play randomizer preset
+	//only acts when ofxPresetsManager is included/defined !
+	if (key == ' ')
+	{
+		setTogglePLAYRandomizer();
+	}
 #endif
 
 	//----

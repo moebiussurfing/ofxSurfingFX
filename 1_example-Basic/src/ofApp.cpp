@@ -4,6 +4,9 @@
 void ofApp::setup()
 {
 	ofSetFrameRate(60);
+	
+	scene.setText1("ofx\nSurfing\nFX");
+	scene.setText2("DEMO\nScene\nofxSurfingFX");
 
 	FX_Processor.setModeOneChain(true);// only one input channel, and all the fx-channels routed chained
 	FX_Processor.setup();
