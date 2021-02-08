@@ -1,23 +1,26 @@
 # ofxSurfingFX 
---------------------------------
 
 ## Overview
-**ofxSurfingFX** is a helper addon for **openFrameworks** to simplify the integration of some curated OF **Glitch/Fx/Color effects** into your projects: GUI and settings manager to use *Out-Of-The-Box*. 
+Helper addon for **openFrameworks** to simplify the integration of some curated **OF Fx addons**:  
+**Glitchs/Fx/Color** into your projects:  
+GUI, workflow and settings manager to be used *Out-Of-The-Box*.  
 
-## Screenshot
+## Screenshots
 ![image](/readme_images/1_example-Basic.PNG?raw=true "image")  
 ![image](/readme_images/2_example-ExtraFX.PNG?raw=true "image")  
-![image](/readme_images/2_example-ExtraFXb?raw=true "image")  
+![image](/readme_images/2_example-ExtraFXb.PNG?raw=true "image")  
+![image](/readme_images/ofxSurfingFX_FullGui.jpg?raw=true "image")  
 
 ## Video/Gif
 
 ## Features
 * **Three independent channels** with (fixed positions) effects:
  * One-Channel Mode. (All Fx chainned).
- * Dual input channels + Output mixer (Should use your own video mixer).
+ * Dual input channels + Output mixer (Should use your own video/layers-mixer).
 * Nice **GUI** with enablers and tweakers.
 * **Settings handler** to auto Store/Recall.
 * **KeyCommands** controller for a selected Fx.
+* **ofxPresetsManager** compatible.
 
 ## Usage
 
@@ -53,13 +56,14 @@ processor.windowResized(w, h);
 - _2_example-ExtraFX_:  
   One chainned channel with **Extra Fx**  
 - _3_example-Presets_:  
+  Integration with **ofxPresetsManager**.
 
 ## Dependencies
 * ofxGui
 * [ofxGuiExtended2](https://github.com/moebiussurfing/ofxGuiExtended2)
 * [ofxSurfingHelpers](https://github.com/moebiussurfing/ofxSurfingHelpers) 
 * [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST)  
-  *for the example scene only*
+  *for the examples scenes only*
 
 * **Core-Bundled Fx Addons**  
 Already included into **OF_ADDON/libs**  
@@ -69,7 +73,7 @@ Already included into **OF_ADDON/libs**
   * [ofxWTBSPostGlitch](https://github.com/watab0shi/ofxWTBSPostGlitch)
 
 * **ExtraFX**  
-With uncommented line ```#define USE_Extra_ADDONS``` into ```ofxSurfingFX.h```  
+Requires to uncomment the line ```#define USE_Extra_ADDONS``` into ```ofxSurfingFX.h```  
   * [ofxChannelFx](https://github.com/moebiussurfing/ofxChannelFx)
   * [ofxGpuLutCube](https://github.com/moebiussurfing/ofxGpuLutCube)
   * [ofxShaderGlitch](https://github.com/pierrextardif/ofxShaderGlitch)
