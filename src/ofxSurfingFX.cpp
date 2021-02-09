@@ -198,7 +198,7 @@ void ofxSurfingFX::setup_Internal()
 	//params
 	MODE_Active.set("ACTIVE", true);
 	ENABLE_keys.set("KEYS", true);
-	SHOW_Help.set("HELP", false);
+	SHOW_Help.set("HELP", true);
 	MODE_App.set("APP MODE", 0, 0, NUM_MODES_APP - 1);
 	MODE_App_Name.set("", "");
 	MODE_App_Name.setSerializable(false);
@@ -1835,19 +1835,22 @@ void ofxSurfingFX::setup_All_FX()
 	ofParameterGroup params_FX{ "FX" };//defined here bc it's just to folder group
 
 	//ch1
-	params_FX.add(ofParameter<std::string>{"CHANNEL 1", ""});
+    ofParameter<std::string> lab1{"CHANNEL 1", ""};
+	params_FX.add(lab1);
 	params_FX.add(ENABLE_FX_A);
 #ifdef USE_ofxGpuLutCube
 	params_FX.add(ENABLE_FX_B);
 #endif
 
 	//ch2
-	params_FX.add(ofParameter<std::string>{"CHANNEL 2", ""});
+    ofParameter<std::string> lab2{"CHANNEL 2", ""};
+	params_FX.add(lab2);
 	params_FX.add(ENABLE_FX_C);
 	params_FX.add(ENABLE_FX_D);
 
 	//out
-	params_FX.add(ofParameter<std::string>{"MIX OUT", ""});
+    ofParameter<std::string> labo{"MIX OUT", ""};
+	params_FX.add(labo);
 	params_FX.add(ENABLE_FX_E);
 #ifdef USE_ofxShaderGlitch
 	params_FX.add(ENABLE_FX_F);
@@ -2027,7 +2030,7 @@ void ofxSurfingFX::gui_customizeDefine()
 	jTab =
 	{
 		{"direction", "horizontal"},
-		{"width", "100%"},
+		{"width", "100%"}
 	};
 
 	jButBig =
@@ -2236,9 +2239,9 @@ void ofxSurfingFX::gui_Build()
 	//--
 
 	//1. fx
-	panel_Fx = gui.addPanel("_container_", jMain);
-
-	//--
+    panel_Fx = gui.addPanel("_container_", jMain);
+    
+    //--
 
 	//2. controls
 	panel_Controls = gui.addPanel(params_FX_Mixer);

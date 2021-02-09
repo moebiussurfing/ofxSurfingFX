@@ -161,3 +161,11 @@ ofxSurfingFX_example/bin/data/configs/ofxTimeMeasurements.settings
 3_example-Presets/bin/data/ofxSurfingFX/ofxPresetsManager/appSettings/Control_Settings.json
 3_example-Presets/bin/data/ofxSurfingFX/ofxPresetsManager/presets/ofxSurfingFX/ofxSurfingFX_4.json
 3_example-Presets/bin/data/ofxSurfingFX/ofxPresetsManager/presets/ofxSurfingFX/ofxSurfingFX_Randomizer.json
+1_example-Basic/config.make
+1_example-Basic/Makefile
+1_example-Basic/openFrameworks-Info.plist
+1_example-Basic/Project.xcconfig
+2_example-ExtraFX/config.make
+2_example-ExtraFX/Makefile
+2_example-ExtraFX/openFrameworks-Info.plist
+2_example-ExtraFX/Project.xcconfig
