@@ -28,7 +28,7 @@ ofxSurfingFX::ofxSurfingFX()
 	//-
 
 	//build help
-	helpInfo = "HELP ofxSurfingFX";
+	helpInfo = "HELP\nofxSurfingFX";
 	helpInfo += "\n\n";
 	helpInfo += "H                 SHOW HELP"; helpInfo += "\n";
 	helpInfo += "G                 SHOW GUI"; helpInfo += "\n";
@@ -247,7 +247,7 @@ void ofxSurfingFX::setup_Internal()
 	//-
 
 	ENABLE_GuiWorkflow.set("GUI WORKFLOW", true);
-	SHOW_Helpers.set("SHOW HELPERS", false);
+	SHOW_Helpers.set("SHOW HELPERS", true);
 	SHOW_FxControls.set("SHOW FX", false);
 
 	//do not store settings bc will be handled by MODE_App
@@ -3574,6 +3574,8 @@ void ofxSurfingFX::refresh_All_FX()
 
 	//FX D
 
+    bool bArbPRE = ofGetUsingArbTex();
+
 	//TODO:
 	//this fx seems that not supports deph.
 	settings.useDepth = false;
@@ -3583,9 +3585,14 @@ void ofxSurfingFX::refresh_All_FX()
 	fbo_FX_D.end();
 
 	//-
-
+    
 	post_FX_D.setup(&fbo_FX_D, settings);
-
+    
+    if (bArbPRE) ofEnableArbTex();
+    else ofDisableArbTex();
+    
+    //----
+    
 	//TODO:
 	settings.useDepth = true;
 
@@ -4073,7 +4080,7 @@ void ofxSurfingFX::setup_FX_D()
 		//do not will store toggle 0/all
 		if (i == 0)
 		{
-			FX_D_Toggles[0].setSerializable(false);//All fx wil not be included into presets/group xml 
+			FX_D_Toggles[0].setSerializable(false);//All fx will not be included into presets/group xml
 		}
 
 		//add toggle to group
@@ -4187,7 +4194,8 @@ void ofxSurfingFX::setup_FX_F()
 	params_FX_F.setName("FX F");
 	params_FX_F.add(ENABLE_FX_F);
 	params_FX_F.add(bReset_FX_F);
-	params_FX_F.add(shaderGlitch.getParamGroup_Control());
+    ofParameterGroup _ggl = shaderGlitch.getParamGroup_Control();
+	params_FX_F.add(_ggl);
 
 	//toggles
 	FX_F_Toggles_params.setName("FX F TOGGLES");//callback is listening on this group
@@ -4223,7 +4231,8 @@ void ofxSurfingFX::setup_FX_G()
 
 	params_FX_G.setName("FX G");//here we add the params that we want to include into presets manager not in gui! (in this fx)
 	params_FX_G.add(ENABLE_FX_G);
-	params_FX_G.add(channelFx.getParamGroup_Control());
+    ofParameterGroup _gch = channelFx.getParamGroup_Control();
+	params_FX_G.add(_gch);
 	//params_FX_G.add(bReset_FX_G);
 
 	//toggles

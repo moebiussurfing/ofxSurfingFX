@@ -169,3 +169,7 @@ ofxSurfingFX_example/bin/data/configs/ofxTimeMeasurements.settings
 2_example-ExtraFX/Makefile
 2_example-ExtraFX/openFrameworks-Info.plist
 2_example-ExtraFX/Project.xcconfig
+3_example-Presets/config.make
+3_example-Presets/Makefile
+3_example-Presets/openFrameworks-Info.plist
+3_example-Presets/Project.xcconfig

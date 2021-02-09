@@ -68,7 +68,7 @@ processor.drawGui();
 
 ## Dependencies
 - ofxGui
-- [ofxGuiExtended2](https://github.com/moebiussurfing/ofxGuiExtended2)
+- [ofxGuiExtended2](https://github.com/moebiussurfing/ofxGuiExtended2) ( fork )
 - [ofxSurfingHelpers](https://github.com/moebiussurfing/ofxSurfingHelpers)
 - [ofxSceneTEST](https://github.com/moebiussurfing/ofxSceneTEST) ( *For the examples scenes only* )
 - [ofxPresetsManager](https://github.com/moebiussurfing/ofxPresetsManager) ( *For the 3_example-Presets only* )
@@ -84,7 +84,7 @@ processor.drawGui();
 (You need to download and add them manually)
   * [ofxChannelFx](https://github.com/moebiussurfing/ofxChannelFx)
   * [ofxGpuLutCube](https://github.com/moebiussurfing/ofxGpuLutCube)
-  * [ofxShaderGlitch](https://github.com/pierrextardif/ofxShaderGlitch)
+  * [ofxShaderGlitch](https://github.com/moebiussurfing/ofxShaderGlitch) ( fork )
 
 ## TODO
 - Integration with a video/layer mixer. **NEW add-on will be released soon!**

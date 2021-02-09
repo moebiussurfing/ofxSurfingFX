@@ -6,4 +6,3 @@ ofxSceneTEST
 ofxShaderGlitch
 ofxSurfingFX
 ofxSurfingHelpers
-ofxWindowApp

@@ -1,5 +1,6 @@
 
 #pragma once
+
 #include "ofMain.h"
 
 
@@ -623,7 +624,8 @@ private:
 
 public:
 	//--------------------------------------------------------------
-	void loadTheme(std::string _path) {
+	void loadTheme(std::string _path)
+    {
 		path_Theme = _path;
 		panel_Fx->loadTheme(path_Theme);
 		panel_Controls->loadTheme(path_Theme);
