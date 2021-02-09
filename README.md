@@ -14,8 +14,6 @@ ofxChannelFx, ofxGpuLutCube and ofxShaderGlitch. (ExtraFX)
 https://imgur.com/a/xKZns9N
 
 ## Screenshots
-**1_example-Basic**  
-![image](/readme_images/1_example-Basic.PNG?raw=true "image")  
 
 **2_example-ExtraFX**  
 ![image](/readme_images/2_example-ExtraFX.PNG?raw=true "image")  
