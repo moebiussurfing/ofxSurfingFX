@@ -1899,7 +1899,7 @@ void ofxSurfingFX::setup_All_FX()
 #endif
 
 	MODE_Fx.set("MODE FX", false);
-	MODE_OneChain.set("MODE ONE CHAIN", true);//excluded from presets
+	MODE_OneChain.set("MODE ONE CHAIN", false);//excluded from presets
 	SHOW_PresetsClicker.set("SHOW PRESETS", false);
 
 #ifdef USE_ofxChannelFx
